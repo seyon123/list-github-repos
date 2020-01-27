@@ -1,0 +1,93 @@
+/*
+-------------------------------------------
+  Author: Seyon Rajagopal
+  Copyright (c) 2020 Seyon Rajagopal
+------------------------------------------- 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #24252a;
+}
+
+body {
+    width: 100%;
+}
+
+.page-title {
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*  Modify code bolow to modify to adjust styling for the repositories */
+.error-box {
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #2e3047;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.error-msg {
+    font-size: 30px;
+    color: #008aa4;
+    vertical-align: middle;
+}
+
+.img {
+    margin-right: 5px; 
+}
+
+.repo-item {
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    background-color: #2e3047; 
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+.description {
+    color: white;
+}
+.title {
+    font-size: 30px;
+    color: #008aa4;
+}
+
+.bottom {
+    position:relative;
+}
+
+.language, .star, .fork {
+    max-width: 100px;
+    display:inline-block;
+    margin-right: 20px;
+    color: white;
+}
+
+.repo-item:hover{
+    text-decoration: none;
+    background-color: #3e4163;
+    transition: ease-in-out 0.2s;
+}
+
+.repo-item:hover > div > div{
+    color: #008aa4;
+    transition: ease-in-out 0.2s;
+}
+
+a:hover{
+    text-decoration: none;
+}
+/* End code to modify */
