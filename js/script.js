@@ -26,7 +26,7 @@ function genRepo(user) {
             .done(function () {
                 request = request.responseJSON;
                 if (!Array.isArray(request) || !request.length) {
-                    $("#repo-box").append("<div class='error-box'><h1 class='error-msg'> Sorry the username entered appears to be invalid </h1></div>");
+                    $("#repo-box").append("<div class='error-box'><h1 class='error-msg'> Sorry the GitHub username entered has no repos or does't exist </h1></div>");
                 }
                 else {
                     for (i = 0; i < request.length; i++) {
