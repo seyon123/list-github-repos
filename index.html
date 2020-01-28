@@ -1,4 +1,4 @@
- <!--
+<!--
  -------------------------------------------
    Author: Seyon Rajagopal
    Copyright (c) 2020 Seyon Rajagopal
@@ -20,17 +20,40 @@
     <script src="js/uikit-icons.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
-
     <title>Repository List </title>
 </head>
 
 <body>
-
-    <h1 class="page-title">GitHub Repositories</h1>
     
-    <!-- The div below is all you need to list all repositories-->
-    <div id="repo-box" ></div>
 
+    <div id="title">
+        <h1>Enter GitHub Username:</h1>
+        <input id="user" type="text" placeholder="seyon123">
+        <button id="btn" onclick="getusername()">View Repos</button>
+        <br><i>*Repos may appear at a slower rate compared to other content on screen.</i>
+    </div>
+
+    <div id="back">
+        <a href="index.html">Go Back</a>
+    </div>
+
+    <!-- The div below is all you need to list all repositories-->
+    <div id="repo-box"></div>
+
+
+    <script>
+            document.getElementById("back").style.display = "none";
+            function getusername() {
+                var user = document.getElementById("user").value;
+                document.getElementById("title").style.display = "none";
+                document.getElementById("repo-box").style.display = "block";
+                document.getElementById("back").style.display = "block";
+                console.log(user);
+                genRepo(user);
+            }
+        </script>
 </body>
+
+</html>
 
 </html>

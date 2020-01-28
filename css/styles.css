@@ -18,15 +18,71 @@ body {
     width: 100%;
 }
 
-.page-title {
-    color: white;
-    font-size: 50px;
-    padding: 20px;
+/* css for start page asking for username */
+
+#title {
     text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    padding: 30px;
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3C3F58;
 }
 
 
-/*  Modify code bolow to modify to adjust styling for the repositories */
+#title h1 {
+    color: white;
+    vertical-align: middle;
+}
+
+#title i {
+    color: rgb(168, 168, 168);
+}
+
+#user {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 30px;
+    background: rgba(36, 37, 42, 0.397);
+    color: #fff;
+}
+
+#btn {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(0,139,165,1);;
+    color: #fff;
+    cursor: pointer;
+}
+
+#back {
+    text-align: center;
+    margin: 30px;
+}
+
+#back a {
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(0,139,165,1);;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  Modify code bolow to modify to adjust styling for the repositories. The above css is for other elements */
 .error-box {
     border-radius: 10px;
     padding: 30px;

@@ -4,12 +4,14 @@
 // -------------------------------------------
 
 
-window.onload = genRepo;
+// To use this file uncomment the  following 2 lines of code and 
+// enter GitHub username in the ""
 
-function genRepo() {
-    // Emter GitHub username below
-    var user = "seyon123";
+// var user = "";
+// window.onload = genRepo(user);
 
+
+function genRepo(user) {
     const testuser = /^[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/i;
 
     if (testuser.test(user) == false || user == "" || user == null) {
