@@ -1,8 +1,8 @@
 # List GitHub Repos
- This repo lists all of your GitHub repos onto a webpage. The styling and functionality can easily be customized to meet your needs. An demo webpage can be found here: https://seyon123.github.io/list-github-repos/
+ This repo lists all of your GitHub repos onto a webpage. The styling and functionality can easily be customized to meet your needs. An demo webpage can be found here: https://repos.seyonrajagopal.ca/
 
  ## How To Use
-Start by forking or downloading this repository. There is mainly 2 file from this repository that you need, <a href="js/script.js">script.js</a> and <a href="css/styles.js">styles.css</a>. The js file gets necessary information about the users repositories from GitHub's api and css file contains styling for elements.
+Start by forking or downloading this repository. There is mainly 2 file from this repository that you need, <a href="js/script.js">script.js</a> and <a href="css/styles.css">styles.css</a>. The js file gets necessary information about the users repositories from GitHub's api and css file contains styling for elements.
 
 Find the script.js file located at `js/script.js`, place the file in your project and uncomment and edit the following lines:
 
