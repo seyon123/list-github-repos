@@ -7,7 +7,7 @@
 // To use this file uncomment the  following 2 lines of code and 
 // enter GitHub username in the ""
 
-var user = "";
+var user = document.domain.split('.', 1);
 window.onload = genRepo(user);
 
 
