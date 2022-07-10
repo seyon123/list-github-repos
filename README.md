@@ -17,21 +17,24 @@
  ## How To Use
 Start by forking or downloading this repository. There is mainly 2 file from this repository that you need, <a href="js/script.js">script.js</a> and <a href="css/styles.css">styles.css</a>. The JavaScript file gets necessary information about the users repositories from GitHub's api and the css file contains styling for elements.
 
-Find the script.js file located at `js/script.js`, place the file in your project and uncomment and edit the following lines:
-
-```javascript
-var user = ""; //put GitHub username in the ""
-window.onload = genRepo(user);
-```
-<i>Note: another method would be to call the </i>`genRepo("username")`<i> function with a button or a form which wouldn't require you to do this step.</i>
-
-
- Go to your projects's html page and make sure you reference the JavaScript file in the head if you havn't done so, eg:
+Go to your projects's html page and make sure you reference the JavaScript file in the head if you havn't done so, eg:
  ```html
 <script src="js/script.js"></script>
  ``` 
 
- In the html page and add a div named `repo-box` where you want the repositiories to show:
+### If you want a form instead of auto list
+Find the script.js file located at `js/script.js`, place the file in your project and comment and edit the following lines:
+
+```javascript
+var user = ...;
+window.onload = genRepo(user);
+```
+<i>BTW: another method would be to call the </i>`genRepo("username")`<i> function with a button or a form which wouldn't require you to do this step.</i>
+
+In the html page remove the comment out besides the div with ID of `title` to return the form.
+
+### Extras
+In the html page you can move the div named `repo-box` where you want the repositiories to show:
 ```html
 <div id="repo-box"></div>
 ```
