@@ -1,13 +1,12 @@
 // -------------------------------------------
 //   Author: Seyon Rajagopal
-//   Copyright (c) 2020 Seyon Rajagopal
+//   Copyright (c) 2022 Seyon Rajagopal
 // -------------------------------------------
 
 
-// To use this file uncomment the  following 2 lines of code and 
-// enter GitHub username in the ""
+// To use a form instead of a specific user comment out the following 2 lines of code:
 
-var user = document.domain.split('.', 1);
+var user = document.domain.split('.', 1); // alternatively, manually enter a different user than yourself using var user = 'alternate_username';
 window.onload = genRepo(user);
 
 

@@ -23,18 +23,25 @@ Go to your projects's html page and make sure you reference the JavaScript file 
  ``` 
 
 ### If you want a form instead of auto list
-Find the script.js file located at `js/script.js`, place the file in your project and comment and edit the following lines:
+Find the script.js file located at `js/script.js`, place the file in your project and **comment out** the following lines:
 
 ```javascript
 var user = ...;
 window.onload = genRepo(user);
 ```
-<i>BTW: another method would be to call the </i>`genRepo("username")`<i> function with a button or a form which wouldn't require you to do this step.</i>
 
-In the html page remove the comment out besides the div with ID of `title` to return the form.
+In the html page **remove the comment ou**t besides the div with ID of `title` to return the form.
+
+### If you want to show the repositories of a different user than yourself
+Find the script.js file located at `js/script.js`, place the file in your project and **manually** fill `var user = 'alternate_username';` in the following lines:
+
+```javascript
+var user = ...;
+window.onload = genRepo(user);
+```
 
 ### Extras
-In the html page you can move the div named `repo-box` where you want the repositiories to show:
+In the html page you can move the div named `repo-box` to where you want the repositiories to show:
 ```html
 <div id="repo-box"></div>
 ```
